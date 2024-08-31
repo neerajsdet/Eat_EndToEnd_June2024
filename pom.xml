@@ -31,5 +31,34 @@
             <version>5.9.1</version>
         </dependency>
     </dependencies>
+    <build>
+        <plugins>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-surefire-plugin</artifactId>-->
+<!--                <version>3.0.0-M7</version>-->
+<!--                <configuration>-->
+<!--                    <reportsDirectory>./test-output</reportsDirectory>-->
+<!--                    <suiteXmlFiles>-->
+<!--                        &lt;!&ndash; pass sanity.xml files as argument from command line &ndash;&gt;-->
+<!--                        &lt;!&ndash;                        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>&ndash;&gt;-->
+<!--                        <suiteXmlFile>testng2.xml</suiteXmlFile>-->
+<!--                    </suiteXmlFiles>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M7</version>
+                <configuration>
+                    <forkCount>1</forkCount>
+                    <suiteXmlFiles>
+                        <!--suppress UnresolvedMavenProperty -->
+                        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Validate Test case Execution for HRM portal">
-    <test name="Sanity check" thread-count="1" parallel="false">
+    <test name="Regression check" thread-count="1" parallel="false">
 <!--        -->
         <groups>
             <run>
                 <include name="regression" />
-                <include name="sanity" />
             </run>
         </groups>
         <classes>
