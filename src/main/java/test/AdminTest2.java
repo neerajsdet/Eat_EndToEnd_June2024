@@ -12,7 +12,7 @@ import pages.LoginPage;
 import setup.DriverFactory;
 import setup.Util;
 
-public class AdminTest {
+public class AdminTest2 {
 
 
     WebDriver driver;
@@ -39,6 +39,7 @@ public class AdminTest {
     }
 
 
+
     @Test(priority = 2, groups = {"regression"})
     public void CheckIfAdminPageIsLoading(){
         homePage.clickOnAdminTab();
@@ -62,6 +63,7 @@ public class AdminTest {
         Assert.assertTrue(homePage.checkIfLeavePageVisible());
 
     }
+
 
     @AfterClass(alwaysRun = true)
     public void tearDown(){

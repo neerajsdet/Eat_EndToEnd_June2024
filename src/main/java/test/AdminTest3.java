@@ -12,7 +12,7 @@ import pages.LoginPage;
 import setup.DriverFactory;
 import setup.Util;
 
-public class AdminTest {
+public class AdminTest3 {
 
 
     WebDriver driver;
@@ -37,6 +37,7 @@ public class AdminTest {
         Assert.assertTrue(basePage.checkIfUserIconDisplayed());
 
     }
+
 
 
     @Test(priority = 2, groups = {"regression"})
